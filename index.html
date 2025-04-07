@@ -8,6 +8,91 @@
   </head>
   <body>
 
+    <!-- inicio carrusel  -->
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/slider1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="img/slider2.jpg" alt="Chicago" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="img/slider3.jpg" alt="New York" class="d-block" style="width:100%">
+    </div>
+     <div class="carousel-item">
+      <img src="img/slider4.jpg" alt="New York" class="d-block" style="width:100%">
+    </div>
+     <div class="carousel-item">
+      <img src="img/slider5.jpg" alt="New York" class="d-block" style="width:100%">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container-fluid mt-3">
+  <h3>Carousel Example</h3>
+  <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+</div>
+
+<!-- fin del carusel -->
+
+<!-- inicio ventana modal 1 -->
+<div class="container mt-3">
+  <h3>Modal Example</h3>
+  <p>Click on the button to open the modal.</p>
+  
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Abrir video de bienvenida
+  </button>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Bienvenidos al video deportivo</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <video src="video/video1.mp4" controls style="width: 100%"></video>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- fin ventana modal 1 -->
+
+
     <div class="container">
       <h1>Hello, world! contenedor en bootstrap</h1>
       <button type="button" class="btn btn-primary">Primary</button>
@@ -52,14 +137,61 @@
       
       <div class="row">
         
-        <div class="col-sm-3" style="background-color: red;"> Columna 1
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla accusantium optio quibusdam deserunt sint, harum saepe placeat illum maxime rerum fuga, unde eius minus repudiandae adipisci iste voluptatibus quos.</p>
+        <div class="col-sm-3" style="background-color: #1280d7;"> <b>Fútbol</b>
+          <p>El fútbol es el deporte más popular del mundo, jugado y seguido con pasión en todos los rincones del planeta. Se juega entre dos equipos de once jugadores, con el objetivo de marcar goles en la portería contraria. Además de ser un deporte competitivo, el fútbol une culturas y comunidades, despertando emociones únicas en cada partido.</p>
         </div>
-        <div class="col-sm-3"style="background-color: yellow;">Columna 2</div>
-        <div class="col-sm-6" style="background-color: green; ">Columna 3</div>
+        <div class="col-sm-3"style="background-color: #80d711;"> <b>Ciclismo</b>
+          <p>El ciclismo es una disciplina que combina resistencia, velocidad y estrategia. Ya sea en ruta, montaña o pista, este deporte requiere una gran preparación física y mental. Más que una competencia, el ciclismo es una forma de explorar paisajes, superar límites y vivir la adrenalina sobre dos ruedas.</p>
+        </div>
+        
+        <div class="col-sm-6" style="background-color: #d7117f; "> <b>Beisbol</b>
+          <p>El béisbol es un deporte lleno de historia y tradición, especialmente popular en América. Dos equipos se enfrentan alternando entre bateo y defensa, con el objetivo de anotar carreras. Cada lanzamiento, batazo y jugada puede cambiar el rumbo del juego, haciendo del béisbol un espectáculo de emoción y precisión.</p>
+        </div>
+        
       </div>
 
     </div>
+
+<!-- inicio de modal 2 -->
+
+<div class="container mt-3">
+  <h3>Modal Example</h3>
+  <p>Click on the button to open the modal.</p>
+  
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">
+    Abrir pdf
+  </button>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal2">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Bienvenidos al modal pdf con la informacion deportiva</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <a href="pdf/archivo1.pdf" download>Link archivo</a>
+        <iframe src="pdf/archivo1.pdf" frameborder="0" width="100%" height="500px"></iframe>
+
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- fin de modal 2 -->
+
 
       <img src="img/imagen1.jpg" alt="" style="width:100%">
 
@@ -67,12 +199,12 @@
       <div class="container">
         
         <div class="row">
-          <div class="col-sm-4"style="background-color: yellow;">Columna 1
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit omnis, eos expedita sapiente vero eum commodi nobis architecto, eius earum aliquam explicabo temporibus. Quisquam incidunt minima reprehenderit, repudiandae porro?</p></div>
-          <div class="col-sm-6"style="background-color: blue;">Columna 2
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti itaque nisi eveniet, laboriosam voluptatum eius ad libero magnam, non tempore earum dicta maxime voluptate, autem sit fugiat veniam praesentium.</p></div>
-          <div class="col-sm-2"style="background-color: red;">Columna 3
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, at, non dolorem ab adipisci beatae neque necessitatibus nesciunt doloremque dolores deleniti, hic, saepe accusamus. Provident, similique molestias obcaecati voluptatibus quis.</p></div>
+          <div class="col-sm-4"style="background-color: #3e9ae3;"><b>Pasión por el deporte</b>
+            <p>El deporte no solo mejora la salud física, sino que también fortalece valores como la disciplina, el trabajo en equipo y la superación personal. Desde una cancha de fútbol hasta una pista de atletismo, cada espacio deportivo es una oportunidad para crecer, competir y compartir.</p></div>
+          <div class="col-sm-6"style="background-color: #99e23e;"><b>La emoción del juego</b>
+            <p>Cada deporte tiene su magia: la velocidad del ciclismo, la estrategia del béisbol, la intensidad del fútbol. La emoción de una competencia, el esfuerzo de cada entrenamiento y la alegría de una victoria hacen del deporte una experiencia que trasciende generaciones.</p></div>
+          <div class="col-sm-2"style="background-color: #e23e99;"><b>Deporte y comunidad</b>
+            <p>El deporte une a las personas. Ya sea en torneos locales o eventos internacionales, fomenta la convivencia, el respeto y la identidad. Practicar o apoyar un deporte va más allá del resultado: es una forma de construir comunidad y celebrar la vida activa.</p></div>
 
         </div>
 
@@ -80,17 +212,18 @@
     
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-6">Columna 1
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo velit explicabo nam, labore quos consectetur aut, quo dolor ut aliquid commodi! Ex officia quo praesentium eaque, ab temporibus quidem obcaecati.</p></div>
+          <div class="col-sm-6" style="background-color: white;"><b>Deporte como estilo de vida</b>
+            <p>Incorporar el deporte en la rutina diaria no solo mejora la condición física, sino que también aporta bienestar mental y emocional. Correr al aire libre, montar bicicleta o jugar un partido con amigos son formas de liberar estrés, mantener el cuerpo activo y fortalecer la mente.</p></div>
 
-            <div class="col-sm-6">columna 2
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt expedita sed eius doloribus! Praesentium provident, inventore. Iusto magni, voluptates saepe quasi quis at. Ratione impedit suscipit harum distinctio facere, iure.</p></div>
+            <div class="col-sm-6" style="background-color: white "><b>El poder de la competencia sana</b>
+              <p>La competencia deportiva enseña a ganar con humildad y a perder con dignidad. Más allá del resultado, lo importante es el esfuerzo, la constancia y la actitud en cada juego. El deporte forma carácter y prepara a las personas para enfrentar desafíos dentro y fuera del campo.</p></div>
         </div>
 
       </div>
 
-      <footer style="background-color: yellow">
-        Página web realizada por Dairon Rueda Claro con bootstrap
+      <footer style="background-color: #68727a">
+        <b>Página web realizada por Dairon Rueda Claro con bootstrap</b>
+        
 
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
