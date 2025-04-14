@@ -8,6 +8,22 @@
   </head>
   <body>
 
+<!-- offcanvas inicio  -->
+<div class="offcanvas offcanvas-start" id="demo1">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Redes sociales</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p><a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_nblank">Facebook</a></p>
+    <p><a href="https://www.instagram.com/" target="_nblank">Instagram</a></p>
+    <p><a href="https://x.com/?lang=es" target="_nblank">X</a></p>
+    <button class="btn btn-secondary" type="button">A Button</button>
+  </div>
+</div>
+
+<!-- offcanvas fin -->
+
     <!-- inicio carrusel  -->
     <!-- Carousel -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -105,16 +121,103 @@
     Ver mi Perfil
   </button>
     </div>
-  </div>
-
-  
+  </div> 
 <!-- fin de la cars -->
 
+<!-- inicio acordeon 1 -->
+<div class="container mt-3">
+  <h2>Accordion Example</h2>
+  <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+  <div id="accordion">
+<div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+<!-- fin de acordeon 1 -->
+
+<!-- inicio acordeon 2 -->
+<div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapsetwo">
+          Collapsible Group Item #2
+        </a>
+      </div>
+      <div id="collapsetwo" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+<!-- fin de acordeon 2 -->
+
+<!-- inicio acordeon 3 -->
+<div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapsethree">
+          Collapsible Group Item #3
+        </a>
+      </div>
+      <div id="collapsethree" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+<!-- fin de acordeon 3 -->
+
+<!-- inicio acordeon 4 -->
+<div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapsefour">
+          Collapsible Group Item #4
+        </a>
+      </div>
+      <div id="collapsefour" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+<!-- fin de acordeon 4 -->
+
+<!-- inicio acordeon 5 -->
+<div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapsefive">
+          Collapsible Group Item #5
+        </a>
+      </div>
+      <div id="collapsefive" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+<!-- fin de acordeon 5 -->
 
     <div class="container">
       <h1>Hello, world! contenedor en bootstrap</h1>
       <button type="button" class="btn btn-primary">Primary</button>
       <!-- Barra de navegacion -->
+
+<!-- inicio boton offcanvas -->
+<div class="container-fluid mt-3">
+  <h3>Offcanvas Sidebar</h3>
+  <p>Offcanvas is similar to modals, except that it is often used as a sidebar.</p>
+  <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo1">
+    Open Offcanvas Sidebar
+  </button>
+</div>
+
+<!-- fin de boton offcanvas -->
 
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
